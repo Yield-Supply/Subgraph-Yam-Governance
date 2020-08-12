@@ -1,0 +1,16 @@
+{
+  "name": "YamGovernance",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ crazyrabbitltc/YamGovernance",
+    "create-local": "graph create --node http://localhost:8020/ crazyrabbitltc/YamGovernance",
+    "remove-local": "graph remove --node http://localhost:8020/ crazyrabbitltc/YamGovernance",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 crazyrabbitltc/YamGovernance"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.18.0",
+    "@graphprotocol/graph-ts": "0.18.0"
+  }
+}
